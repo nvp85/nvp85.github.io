@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 60%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        .about-me, .contact-info, .resume-links {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .about-me:last-child, .contact-info:last-child {
+            border-bottom: none;
+        }
+        .resume-link {
+            display: inline-block;
+            margin: 10px 5px;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .icon {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <section class="main-photo">
+            <img src="your_photo.jpg" alt="Your Photo">
+        </section>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                This is a brief paragraph about yourself. Include a few details like your background,
+                what you do, and what you are passionate about.
+            </p>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Info</h2>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn:<a href="https://www.linkedin.com/in/yourprofile" target="_blank"> yourprofile</a></p>
+            <p>GitHub:<a href="https://github.com/yourusername" target="_blank"> yourusername</a></p>
+        </section>
+
+        <section class="resume-links">
+            <a href="your-resume.pdf" class="resume-link" target="_blank">Download Resume (PDF)</a>
+            <a href="your-resume.docx" class="resume-link" target="_blank">Download Resume (Word)</a>
+        </section>
+    </div>
+
+</body>
+</html>
+
