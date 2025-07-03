@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,7 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         .container {
             width: 60%;
             max-width: 800px;
@@ -23,6 +25,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
         .main-photo img {
             width: 150px;
             height: 150px;
@@ -31,22 +34,27 @@
             display: block;
             border: 3px solid #eee;
         }
+
         h2 {
             color: #333;
             margin-bottom: 10px;
         }
-        .about-me, .contact-info {
+
+        .section {
             text-align: left;
             padding: 10px;
             border-bottom: 1px solid #eee;
         }
-        .resume-links {
+
+        #resume-links {
             text-align: left;
             padding: 10px;
         }
-        .about-me:last-child, .contact-info:last-child {
+
+        .section:last-child {
             border-bottom: none;
         }
+
         .resume-link {
             display: inline-block;
             margin: 10px 0px;
@@ -57,41 +65,99 @@
             border-radius: 4px;
             transition: background-color 0.3s ease;
         }
+
         .resume-link:hover {
             background-color: #0056b3;
         }
+
         a {
             color: #007bff;
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
+
+        #about-me>p {
+            text-align: justify;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <section class="main-photo">
             <img src="photo.jpg" alt="Photo">
         </section>
 
-        <section class="about-me">
+        <section class="section" id="about-me">
             <h2>About Me</h2>
             <p>
-            Hi, my name is Natalia! I'm a web developer with three years of experience in Python and Django, looking for an opportunity to restart my career after a long break. 
+                Hi, my name is Natalia! I'm an entry-level web developer with strong problem-solving skills and hands-on
+                experience contributing to a large-scale Django project. I recently completed LaunchCode's coding
+                bootcamp, where I trained in building full-stack applications using React and the Spring framework. I'm
+                now looking for a junior web developer role where I can grow, collaborate with a supportive team, and
+                work on real-world software solutions.
             </p>
+            <p><span style="font-weight: bold;">Skills: </span>Python, JavaScript, Java, SQL | Django, React, Spring |
+                PostgreSQL, Git, Docker</p>
         </section>
 
-        <section class="contact-info">
-            <h2>Contact Info</h2>
-            <p><a href="mailto:nvp@zhukov.al">nvp@zhukov.al</a> | <a href="https://www.linkedin.com/in/nvp85" target="_blank">LinkedIn</a> | <a href="https://github.com/nvp85" target="_blank">GitHub</a></p>
-        </section>
-
-        <section class="resume-links">
+        <section class="section" id="resume-links">
+            <h2>Resume</h2>
             <a href="resume_natalia_plishkina.pdf" class="resume-link" target="_blank">Download Resume (PDF)</a>
             <a href="resume_natalia_plishkina.docx" class="resume-link" target="_blank">Download Resume (Word)</a>
         </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <div>
+                <h3>AI chat</h3>
+                <p>
+                    <a href="https://fantastic-malasada-6aa66c.netlify.app/" target="_blank">Live on Netlify</a> |
+                    <a href="https://github.com/nvp85/minimalistic-web-ai-chat" target="_blank">On GitHub</a>
+                </p>
+                <p>A web interface for interacting with an LLM using the OpenAI API. The features include
+                    the chat interface, basic chat management (renaming and deleting chats), user profile management,
+                    and
+                    authentication.
+                </p>
+                <p>Tech Stack: React, React Router, HTML/CSS, OpenAI API.</p>
+            </div>
+
+            <div>
+                <h3>Calorie Tracker</h3>
+                <p>
+                    <a href="https://github.com/nvp85/calorie-tracker" target="_blank">On GitHub</a>
+                </p>
+                <p>A React-based calorie tracking application designed to help users manage their daily nutrition goals (a frontend without a backend). The app allows users to search a pre-populated database of common foods ("public" foods) and also add their own custom entries ("private" foods) that are only visible to them. Users can log food consumption from both categories and monitor their daily calorie intake. The app also enables setting a personal daily calorie budget.</p>
+                <p>Teck Stack: React, React Router, HTML/CSS.</p>
+            </div>
+            <div>
+                <h3>Dictionary aggregator</h3>
+                <p>
+                    <a href="https://dict.nvp85.net/home/" target="_blank">Live</a> | 
+                    <a href="https://github.com/nvp85/dicts_aggregator" target="_blank">On GitHub</a>
+                </p>
+                <p>
+                    A web application that provides a unified interface for word lookup across multiple online
+                    dictionaries,
+                    using their public APIs.
+                </p>
+                <p>Tech Stack: Django, PostgreSQL, Bulma (CSS library), JavaScript.</p>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Contact Info</h2>
+            <p>
+                <a href="mailto:nvp@zhukov.al">nvp@zhukov.al</a> | 
+                <a href="https://www.linkedin.com/in/nvp85"
+                    target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/nvp85" target="_blank">GitHub</a>
+            </p>
+        </section>
     </div>
 </body>
-</html>
 
+</html>
