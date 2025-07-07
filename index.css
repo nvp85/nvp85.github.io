@@ -119,6 +119,7 @@ header {
     background: #fff;
     padding: 12px 0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    z-index: 900;
 }
 
 .site-nav ul {
