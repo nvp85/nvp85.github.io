@@ -1,0 +1,161 @@
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+}
+
+.main-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 0px;
+    display: block;
+    border: 3px solid #eee;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    scroll-margin-top: 120px;
+}
+
+#resume {
+    text-align: left;
+    padding: 10px;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.resume-link {
+    display: inline-block;
+    margin: 10px 0px;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about-me>p {
+    text-align: justify;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.skill-card i {
+    font-size: 1.4em;
+    margin-right: 8px;
+    color: var(--primary-color, #007bff);
+}
+
+.skill-card span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skill-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+header {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background: #fff;
+    padding: 12px 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}

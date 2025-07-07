@@ -4,89 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/51330431ae.js" crossorigin="anonymous"></script>
+    <link href="index.css" rel="stylesheet">
     <title>Natalia P.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .container {
-            width: 60%;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .main-photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin: 0 auto 0px;
-            display: block;
-            border: 3px solid #eee;
-        }
-
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .section {
-            text-align: left;
-            padding: 10px;
-            border-bottom: 1px solid #eee;
-        }
-
-        #resume-links {
-            text-align: left;
-            padding: 10px;
-        }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
-        .resume-link {
-            display: inline-block;
-            margin: 10px 0px;
-            background: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        .resume-link:hover {
-            background-color: #0056b3;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        #about-me>p {
-            text-align: justify;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
+    <header>
+        <h1 id="name">Natalia Plishkina, Web Developer</h1>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-info">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
         <section class="main-photo">
             <img src="photo.jpg" alt="Photo">
         </section>
@@ -100,64 +40,87 @@
                 now looking for a junior web developer role where I can grow, collaborate with a supportive team, and
                 work on real-world software solutions.
             </p>
-            <p><span style="font-weight: bold;">Skills: </span>Python, JavaScript, Java, SQL | Django, React, Spring |
-                PostgreSQL, Git, Docker</p>
         </section>
 
-        <section class="section" id="resume-links">
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-python"></i> Python / Django</div>
+                <div class="skill-card"><i class="fa-brands fa-java"></i> Java / Spring</div>
+                <div class="skill-card"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-card"><i class="fa-brands fa-react"></i> React</div>
+                <div class="skill-card"><i class="fas fa-database"></i> Postgres</div>
+                <div class="skill-card"><i class="fas fa-database"></i> MySQL</div>
+                <div class="skill-card"><i class="fab fa-aws"></i> AWS</div>
+                <div class="skill-card"><i class="fab fa-github"></i> Git</div>
+            </div>
+        </section>
+
+        <section class="section" id="resume">
             <h2>Resume</h2>
-            <a href="resume_natalia_plishkina.pdf" class="resume-link" target="_blank">Download Resume (PDF)</a>
-            <a href="resume_natalia_plishkina.docx" class="resume-link" target="_blank">Download Resume (Word)</a>
+            <a href="resume_natalia_plishkina.pdf" target="_blank">Download Resume (PDF)</a>
         </section>
 
-        <section class="section">
+        <section class="section" id="projects">
             <h2>Projects</h2>
-            <div>
-                <h3>AI chat</h3>
-                <p>
-                    <a href="https://fantastic-malasada-6aa66c.netlify.app/" target="_blank">Live on Netlify</a> |
-                    <a href="https://github.com/nvp85/minimalistic-web-ai-chat" target="_blank">On GitHub</a>
-                </p>
-                <p>A web interface for interacting with an LLM using the OpenAI API. The features include
-                    the chat interface, basic chat management (renaming and deleting chats), user profile management,
-                    and
-                    authentication.
-                </p>
-                <p>Tech Stack: React, React Router, HTML/CSS, OpenAI API.</p>
-            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>AI chat</h3>
+                    <p>
+                        <a href="https://fantastic-malasada-6aa66c.netlify.app/" target="_blank">Live on Netlify</a> |
+                        <a href="https://github.com/nvp85/minimalistic-web-ai-chat" target="_blank">On GitHub</a>
+                    </p>
+                    <p>A web interface for interacting with an LLM using the OpenAI API. The features include
+                        the chat interface, basic chat management (renaming and deleting chats), user profile
+                        management,
+                        and
+                        authentication.
+                    </p>
+                    <p>Tech Stack: React, React Router, HTML/CSS, OpenAI API.</p>
+                </div>
 
-            <div>
-                <h3>Calorie Tracker</h3>
-                <p>
-                    <a href="https://github.com/nvp85/calorie-tracker" target="_blank">On GitHub</a>
-                </p>
-                <p>A React-based calorie tracking application designed to help users manage their daily nutrition goals (a frontend without a backend). The app allows users to search a pre-populated database of common foods ("public" foods) and also add their own custom entries ("private" foods) that are only visible to them. Users can log food consumption from both categories and monitor their daily calorie intake. The app also enables setting a personal daily calorie budget.</p>
-                <p>Teck Stack: React, React Router, HTML/CSS.</p>
-            </div>
-            <div>
-                <h3>Dictionary aggregator</h3>
-                <p>
-                    <a href="https://dict.nvp85.net/home/" target="_blank">Live</a> | 
-                    <a href="https://github.com/nvp85/dicts_aggregator" target="_blank">On GitHub</a>
-                </p>
-                <p>
-                    A web application that provides a unified interface for word lookup across multiple online
-                    dictionaries,
-                    using their public APIs.
-                </p>
-                <p>Tech Stack: Django, PostgreSQL, Bulma (CSS library), JavaScript.</p>
+                <div class="project-card">
+                    <h3>Calorie Tracker</h3>
+                    <p>
+                        <a href="https://github.com/nvp85/calorie-tracker" target="_blank">On GitHub</a>
+                    </p>
+                    <p>A React-based calorie tracking application designed to help users manage their daily nutrition
+                        goals
+                        (a frontend without a backend). The app allows users to search a pre-populated database of
+                        common
+                        foods ("public" foods) and also add their own custom entries ("private" foods) that are only
+                        visible
+                        to them. Users can log food consumption from both categories and monitor their daily calorie
+                        intake.
+                        The app also enables setting a personal daily calorie budget.</p>
+                    <p>Tech Stack: React, React Router, HTML/CSS.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Dictionary aggregator</h3>
+                    <p>
+                        <a href="https://dict.nvp85.net/home/" target="_blank">Live</a> |
+                        <a href="https://github.com/nvp85/dicts_aggregator" target="_blank">On GitHub</a>
+                    </p>
+                    <p>
+                        A web application that provides a unified interface for word lookup across multiple online
+                        dictionaries,
+                        using their public APIs.
+                    </p>
+                    <p>Tech Stack: Django, PostgreSQL, Bulma (CSS library), JavaScript.</p>
+                </div>
             </div>
         </section>
-        <section class="section">
+        <section class="section" id="contact-info">
             <h2>Contact Info</h2>
             <p>
-                <a href="mailto:nvp@zhukov.al">nvp@zhukov.al</a> | 
-                <a href="https://www.linkedin.com/in/nvp85"
-                    target="_blank">LinkedIn</a> | 
-                <a href="https://github.com/nvp85" target="_blank">GitHub</a>
+                <a href="mailto:nvp@zhukov.al"><i class="fa-regular fa-envelope"></i> nvp@zhukov.al</a> |
+                <a href="https://www.linkedin.com/in/nvp85" target="_blank"><i class="fa-brands fa-linkedin"></i>
+                    LinkedIn</a> |
+                <a href="https://github.com/nvp85" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
             </p>
         </section>
-    </div>
+    </main>
+    <footer>© 2025 Natalia Plishkina</footer>
 </body>
 
 </html>
