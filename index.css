@@ -154,9 +154,26 @@ footer {
     padding: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform .2s, box-shadow .2s;
+    text-align: justify;
+    display: flex;
+    gap: 5px;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.project-img {
+    width: 250px;
+    height: auto;
+    float: inline-start;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+@media (max-width: 700px) {
+    .project-card {
+        flex-direction: column;
+    }
 }
