@@ -8,6 +8,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     box-sizing: border-box;
+    --primary-color: purple;
 }
 
 main {
@@ -93,7 +94,7 @@ a:hover {
     border: 1px solid #d8d8d8;
     border-radius: 6px;
     background-color: #fafafa;
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition: box-shadow 0.2s, transform 0.2s; /* smooth transition */
 }
 
 .skill-card i {
@@ -176,4 +177,8 @@ footer {
     .project-card {
         flex-direction: column;
     }
+}
+
+#contact-info i {
+    color: var(--primary-color);
 }
