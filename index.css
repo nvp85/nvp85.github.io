@@ -206,12 +206,17 @@ footer {
 }
 
 .modal-content {
+    position: relative;
     width: fit-content;
     background-color: white;
     z-index: 20;
 }
 
 #close-modal-btn {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
     background-color: white;
     margin: none;
     border: none;
@@ -226,7 +231,7 @@ footer {
 }
 
 .modal-pic {
-    width: 70rem;
-    max-width: 90vw;
+    width: 60rem;
+    max-width: 80vw;
     height: auto;
 }
