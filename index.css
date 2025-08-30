@@ -214,24 +214,29 @@ footer {
 
 #close-modal-btn {
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: auto;
-    right: 0;
-    background-color: white;
+    right: -1rem;
+    background-color: transparent;
     margin: none;
     border: none;
+    border-radius: 50%;
 }
 
-#close-modal-btn:hover {
+#close-modal-icon:hover {
     background-color: lightgray;
 }
 
 #close-modal-icon {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #685c5c;
 }
 
 .modal-pic {
-    width: 60rem;
     max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
     height: auto;
 }
