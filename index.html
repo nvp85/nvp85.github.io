@@ -69,17 +69,17 @@
                     <div>
                         <h3>AI Chat</h3>
                         <p>
-                            <a href="https://fantastic-malasada-6aa66c.netlify.app/" target="_blank">Live on Netlify</a>
-                            |
                             <a href="https://github.com/nvp85/minimalistic-web-ai-chat" target="_blank">On GitHub</a>
                         </p>
-                        <p>A web interface for interacting with an LLM using the OpenAI API. The features include
+                        <p>A responsive web interface for interacting with LLMs from different AI providers. The
+                            features include
                             the chat interface, basic chat management (renaming and deleting chats), user profile
-                            management,
-                            and
-                            authentication.
+                            management, and authentication. Additionally, the app has full-text and semantic search
+                            functionalities,
+                            allowing users to search efficiently across their chats.
                         </p>
-                        <p>Tech Stack: React, React Router, HTML/CSS, OpenAI API.</p>
+                        <p>Tech Stack: React, React Router, Spring, MySQL, the OpenAI Java SDK, Google Gen AI Java SDK,
+                            Hibernate Search & Apache Lucene.</p>
                     </div>
                 </div>
 
@@ -106,17 +106,17 @@
                 <div class="project-card">
                     <img src="DictsAggregator.png" class="project-img" />
                     <div>
-                    <h3>Dictionary aggregator</h3>
-                    <p>
-                        <a href="https://dict.nvp85.net/home/" target="_blank">Live</a> |
-                        <a href="https://github.com/nvp85/dicts_aggregator" target="_blank">On GitHub</a>
-                    </p>
-                    <p>
-                        A web application that provides a unified interface for word lookup across multiple online
-                        dictionaries,
-                        using their public APIs.
-                    </p>
-                    <p>Tech Stack: Django, PostgreSQL, Bulma (CSS library), JavaScript.</p>
+                        <h3>Dictionary aggregator</h3>
+                        <p>
+                            <a href="https://dict.nvp85.net/home/" target="_blank">Live</a> |
+                            <a href="https://github.com/nvp85/dicts_aggregator" target="_blank">On GitHub</a>
+                        </p>
+                        <p>
+                            A web application that provides a unified interface for word lookup across multiple online
+                            dictionaries,
+                            using their public APIs.
+                        </p>
+                        <p>Tech Stack: Django, PostgreSQL, Bulma (CSS library), JavaScript.</p>
                     </div>
                 </div>
             </div>
@@ -130,8 +130,39 @@
                 <a href="https://github.com/nvp85" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
             </p>
         </section>
+        <section class="hidden" id="modal">
+            <div class="modal-overlay" id="modal-overlay">
+                <div class="modal-content" id="modal-content">
+                    <button id="close-modal-btn"><i class="fa-regular fa-circle-xmark" id="close-modal-icon"></i></button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>© 2025 Natalia Plishkina</footer>
+    <script>
+        const pics = document.querySelectorAll(".project-img");
+        const modal = document.getElementById("modal");
+        const modalContent = document.getElementById("modal-content");
+        const modalOverlay = document.getElementById("modal-overlay");
+        const closeModalButton = document.getElementById("close-modal-btn");
+        pics.forEach(pic => {
+            pic.addEventListener('click', function() {
+                modal.style.display = 'block';
+                const clonePic = pic.cloneNode();
+                clonePic.classList.add("modal-pic");
+                modalContent.appendChild(clonePic);
+            })
+        });
+        function closeModal() {
+            modal.style.display = 'none';
+            modalContent.removeChild(modalContent.lastElementChild);
+        };
+        modalOverlay.addEventListener("click", closeModal);
+        modalContent.addEventListener("click", function(e) {
+            e.stopPropagation();
+        });
+        closeModalButton.addEventListener("click", closeModal);
+    </script>
 </body>
 
 </html>
